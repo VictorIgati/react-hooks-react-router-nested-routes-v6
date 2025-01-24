@@ -1,14 +1,12 @@
-import { useRouteError } from "react-router-dom";
+import React from "react";
 
 function ErrorPage() {
-  const error = useRouteError();
-  console.error(error);
-
   return (
     <main>
-        <h1>Whoops! Something went wrong!</h1>
+      <h1>Something went wrong!</h1>
+      <p>Please try another link or go back to the home page.</p>
     </main>
   );
-};
+}
 
 export default ErrorPage;
